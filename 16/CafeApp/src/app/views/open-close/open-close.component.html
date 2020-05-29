@@ -1,0 +1,17 @@
+<app-sub-header></app-sub-header>
+
+<h2>Business Open/Close Setting</h2>
+
+<section class="content">
+
+  <form class="input-container">
+    <p>It is <span class="open-close-status">{{currentState}}</span> Now.</p>
+
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="open-close-radio-group"
+      [(ngModel)]="selectedState" (change)="onChangeState()" name="a">
+      <mat-radio-button class="open-close-radio" [value]="1">Open</mat-radio-button>
+      <mat-radio-button class="open-close-radio" [value]="0">Close</mat-radio-button>
+    </mat-radio-group>
+    <button mat-raised-button class="submit" [disabled]="!canSubmit" (click)="submit()">Save</button>
+  </form>
+</section>

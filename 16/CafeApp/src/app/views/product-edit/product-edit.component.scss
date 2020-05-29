@@ -1,0 +1,67 @@
+hr{
+    border-color:rgb(245, 242, 242);
+}
+button.button-select{
+    padding: 5px 30px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius:10px;
+    
+}
+button.upload-button{
+    padding: 5px 30px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+div.component_main{
+    text-align: left;
+}
+
+input.u-full-width{
+    width: 40%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/    
+}
+
+.icon{
+    font-size: 20px;
+    vertical-align: middle;
+    color: gray;
+}
+
+div.header_right{
+    vertical-align:middle;
+    text-align: right;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px 10px;
+    background-color: #f8f8f6;
+}
+div.header_left{
+    vertical-align:middle;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px 10px;
+    background-color: #f8f8f6;
+}
+div.header_right.hover{
+    background-color: red;
+}
+div.header_left{
+    vertical-align:middle;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px 10px;
+    background-color: #f8f8f6;
+}
+
+
+.alert{
+    color:red;
+}

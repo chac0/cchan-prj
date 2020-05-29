@@ -1,0 +1,27 @@
+<!--
+<mat-toolbar>
+    <span class="title-center">
+      <img src="../assets/icon.png" width="100" height="100" />
+    </span>
+    <ul>
+      <li>
+        <a routerLink="/sample">さんぷる</a>
+      </li>
+      <li>
+        <a routerLink="/sample_api_call">api呼び出しサンプル</a>
+      </li>
+    </ul>
+</mat-toolbar>
+-->
+<div class="title-center">
+    <img src="../assets/icon.png" width="100" height="100" />
+
+<br />
+    <a routerLink="/sample">さんぷる</a>
+    <a routerLink="/sample_api_call">api呼び出しサンプル</a>
+</div>
+
+
+<div class="main">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,26 @@
+<form class="input-container" [formGroup]="updateForm">
+  <div class="bold">
+    <input
+      matInput
+      formControlName="item_stock"
+      [value]="item.stock"
+      id="item_stock-{{i}}"
+      class="width-50"></div>
+</form>
+<div class="mt-8">
+  <mat-button-toggle-group
+    #group="matButtonToggleGroup"
+    [vertical]="true"
+    [disabled]="isOrderConfirmed"
+    class="width-100"
+  >
+    <mat-button-toggle
+      id="cancel"
+      value="cancel"
+      (click)="updateHandler(item.id, i)"
+      class="mat-button-toggle-checked"
+    >
+      Update Stock
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>

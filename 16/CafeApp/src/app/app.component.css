@@ -1,0 +1,15 @@
+.title-center {
+    /* margin: 0 auto;
+    padding: 10px; */
+
+    flex: 1 1 auto;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+div.main{
+    padding:30px 20px;
+    text-align: center;
+
+}
+

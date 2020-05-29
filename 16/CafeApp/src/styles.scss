@@ -1,0 +1,197 @@
+/* You can add global styles to this file, and also import other style files
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+#main{
+  text-align: center;
+}
+
+$hr-green: (
+  50 : #e5f4e7,
+  100 : #bee3c4,
+  200 : #93d19d,
+  300 : #68bf75,
+  400 : #47b158,
+  500 : #27a33a,
+  600 : #239b34,
+  700 : #1d912c,
+  800 : #178825,
+  900 : #0e7718,
+  A100 : #a9ffb0,
+  A200 : #76ff81,
+  A400 : #43ff52,
+  A700 : #2aff3b,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$hr-amber: (
+  50 : #fff7e8,
+  100 : #feecc6,
+  200 : #fedfa0,
+  300 : #fed27a,
+  400 : #fdc85e,
+  500 : #fdbe41,
+  600 : #fdb83b,
+  700 : #fcaf32,
+  800 : #fca72a,
+  900 : #fc991c,
+  A100 : #ffffff,
+  A200 : #fffefc,
+  A400 : #ffe6c9,
+  A700 : #ffdab0,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+
+$hr-orage: (
+  50 : #fbe1c6,
+  100 : #ffb394,
+  200 : #f89b5d,
+  300 : #ff8e6c,
+  400 : #ff7a3c,
+  500 : #fd6d41,
+  600 : #ff520e,
+  700 : #f5764f,
+  800 : #ff5e00,
+  900 : #dd4719,
+  A100 : #ffffff,
+  A200 : #fffefc,
+  A400 : #ffe6c9,
+  A700 : #ffdab0,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+$hr-red: (
+  50 : #ffecec,
+  100 : #fed0ce,
+  200 : #feb1ae,
+  300 : #fd918e,
+  400 : #fc7a75,
+  500 : #fc625d,
+  600 : #fc5a55,
+  700 : #fb504b,
+  800 : #fb4641,
+  900 : #fa3430,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffd7d6,
+  A700 : #ffbebd,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$hr-primary: mat-palette($hr-orage);
+$hr-accent: mat-palette($hr-amber, 500, 400, 600);
+$hr-warn: mat-palette($hr-red);
+
+$hr-app-theme: mat-light-theme($hr-primary, $hr-accent, $hr-warn);
+
+@include angular-material-theme($hr-app-theme);
+
+@font-face {
+  font-family: 'GenShinGothic-P-Light';
+}
+
+* {
+  font-family: 'GenShinGothic-P-Light';
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: rgb(92, 91, 91);
+
+  // app/app.component.css と同期してください
+  background-color: #fdfdfb;
+}
+
+$custom-typography: mat-typography-config(
+  $font-family: 'GenShinGothic-P-Light',
+);
+
+
+h2{
+  color:grey;
+}
+
+// primaryボタンのカスタマイズ
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+@include mat-core($custom-typography);
+p.note{
+  color:gray;
+  white-space: wrap;
+  text-align: left;
+}
+
+@include mat-core($custom-typography);

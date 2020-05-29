@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-content>
+    <div fxLayout="row">
+      <div fxFlex="30">
+        <ng-container *ngIf="orderInfo.imagePath$">
+          <img withImageLoader [bindSrc]="orderInfo.imagePath$ | async" class="image"/>
+        </ng-container>
+      </div>
+      <div fxFlex fxLayout="column" class="text-left ml-12 pl-8">
+        <div class="delivered-product" *ngIf="orderInfo.isDelivered">※This order is to be delived.</div>
+        <div class="bold">{{ orderInfo.productName }}</div>
+        <div class="bold">{{ orderInfo.brandName }}</div>
+        <div class="bold">{{ orderInfo.price | currency: 'USD' }}</div>
+        <div class="bold">Quantity：
+        <input
+          matInput
+          [(ngModel)]="orderInfo.amount"
+          formControlName="orderInfo.amount"
+          [value]="orderInfo.amount"
+          class="width-50"></div>
+        <div class="mt-8">
+          <mat-button-toggle-group
+            #group="matButtonToggleGroup"
+            [ngModel]="toggleStatus"
+            [vertical]="true"
+            [disabled]="isOrderConfirmed"
+            class="width-100"
+          >
+            <mat-button-toggle
+              id="cancel"
+              value="cancel"
+              (click)="cancelHandler()"
+              class="mat-button-toggle-checked"
+            >
+              Cancel（Not paid yet）
+            </mat-button-toggle>
+            <mat-button-toggle
+              id="receiveAnOrder"
+              value="receiveAnOrder"
+              (click)="receiveAnOrderHandler()"
+              class="mat-button-toggle-checked"
+            >
+              Send Order（Execute payment）
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

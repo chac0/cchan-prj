@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c599b3f-ea90-4ff9-b9f1-7370739b2b8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list/product-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list/product-list.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list/product-list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setup/FireStore_Importer/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Setup/FireStore_Importer/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/order-list-item/order-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/order-list-item/order-list-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/product-img-list-template/product-img-list-template.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-img-list-template/product-img-list-template.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list-template/product-list-template.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list-template/product-list-template.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list-template/product-list-template.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list-template/product-list-template.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list-template/product-list-template.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/product-list-template/product-list-template.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/sub-header/sub-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/sub-header/sub-header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/models/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/models/shipping-address.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/models/shipping-address.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/order-list/order-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/order-list/order-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/order-list/order-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/order-list/order-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/product-csv-export/product-csv-export.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/product-csv-export/product-csv-export.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/product-edit/product-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/product-edit/product-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/product-edit/product-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/product-edit/product-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/product-img-list/product-img-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/product-img-list/product-img-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/assets/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/use-cases/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/use-cases/index.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CafeServer" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1bTDBW6f98SXWBghxnkr98uxHAz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CafeApp" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="E:\DATA\WORK\ctc\cafe\csumb\cafe-web\WebApp\CafeServer\functions\node_modules\typescript\lib" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c599b3f-ea90-4ff9-b9f1-7370739b2b8a" name="Default Changelist" comment="" />
+      <created>1588647058627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588647058627</updated>
+      <workItem from="1588647090240" duration="644000" />
+      <workItem from="1588647919945" duration="1343000" />
+      <workItem from="1588682744233" duration="1026000" />
+      <workItem from="1588694321743" duration="1032000" />
+      <workItem from="1588698139404" duration="606000" />
+      <workItem from="1588702733564" duration="594000" />
+      <workItem from="1588706015138" duration="860000" />
+      <workItem from="1588707962017" duration="597000" />
+      <workItem from="1588710085038" duration="596000" />
+      <workItem from="1588732463860" duration="611000" />
+      <workItem from="1588765367591" duration="598000" />
+      <workItem from="1588768016738" duration="598000" />
+      <workItem from="1588774012715" duration="599000" />
+      <workItem from="1588780565101" duration="599000" />
+      <workItem from="1588782823323" duration="825000" />
+      <workItem from="1588784627639" duration="627000" />
+      <workItem from="1588786581391" duration="597000" />
+      <workItem from="1588788585531" duration="596000" />
+      <workItem from="1588858177104" duration="598000" />
+      <workItem from="1588860111146" duration="603000" />
+      <workItem from="1588862643791" duration="1248000" />
+      <workItem from="1588864693631" duration="628000" />
+      <workItem from="1588867401660" duration="599000" />
+      <workItem from="1588869316332" duration="834000" />
+      <workItem from="1588871160341" duration="596000" />
+      <workItem from="1588873237667" duration="598000" />
+      <workItem from="1588875344310" duration="1101000" />
+      <workItem from="1588877286419" duration="598000" />
+      <workItem from="1588879111318" duration="599000" />
+      <workItem from="1588880962059" duration="690000" />
+      <workItem from="1588882940805" duration="591000" />
+      <workItem from="1588885411625" duration="602000" />
+      <workItem from="1588899730465" duration="597000" />
+      <workItem from="1588901704149" duration="42000" />
+      <workItem from="1589908708105" duration="1056000" />
+      <workItem from="1590077520073" duration="1260000" />
+      <workItem from="1590079904838" duration="1826000" />
+      <workItem from="1590081825062" duration="1510000" />
+      <workItem from="1590083632990" duration="1841000" />
+      <workItem from="1590085566297" duration="890000" />
+      <workItem from="1590090130615" duration="627000" />
+      <workItem from="1590092392669" duration="605000" />
+      <workItem from="1590109745702" duration="1065000" />
+      <workItem from="1590150874723" duration="621000" />
+      <workItem from="1590155432248" duration="730000" />
+      <workItem from="1590158463783" duration="1105000" />
+      <workItem from="1590169721725" duration="597000" />
+      <workItem from="1590171596258" duration="599000" />
+      <workItem from="1590201444120" duration="599000" />
+      <workItem from="1590203663177" duration="596000" />
+      <workItem from="1590205522847" duration="598000" />
+      <workItem from="1590250629201" duration="1446000" />
+      <workItem from="1590252974171" duration="1831000" />
+      <workItem from="1590255633886" duration="1873000" />
+      <workItem from="1590257582902" duration="1202000" />
+      <workItem from="1590259414541" duration="599000" />
+      <workItem from="1590339690092" duration="599000" />
+      <workItem from="1590342150530" duration="764000" />
+      <workItem from="1590344043720" duration="594000" />
+      <workItem from="1590356313867" duration="599000" />
+      <workItem from="1590407096271" duration="1238000" />
+      <workItem from="1590409079878" duration="1777000" />
+      <workItem from="1590410888414" duration="1213000" />
+      <workItem from="1590412710185" duration="1098000" />
+      <workItem from="1590414558128" duration="1797000" />
+      <workItem from="1590416700262" duration="1556000" />
+      <workItem from="1590418586064" duration="1327000" />
+      <workItem from="1590423377660" duration="2093000" />
+      <workItem from="1590425947854" duration="1692000" />
+      <workItem from="1590427733388" duration="1944000" />
+      <workItem from="1590513732299" duration="632000" />
+      <workItem from="1590548426383" duration="1399000" />
+      <workItem from="1590552727806" duration="599000" />
+      <workItem from="1590603628338" duration="1095000" />
+      <workItem from="1590620854143" duration="1531000" />
+      <workItem from="1590628647521" duration="2171000" />
+      <workItem from="1590670980176" duration="1479000" />
+      <workItem from="1590672880573" duration="1552000" />
+      <workItem from="1590674738022" duration="746000" />
+      <workItem from="1590679981473" duration="937000" />
+      <workItem from="1590681857721" duration="1674000" />
+      <workItem from="1590686329618" duration="1757000" />
+      <workItem from="1590688173936" duration="333000" />
+      <workItem from="1590688892778" duration="615000" />
+      <workItem from="1590692753865" duration="629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1106" y="338" key="FileChooserDialogImpl" timestamp="1590692781840">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1106" y="338" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1590692781840" />
+    <state x="460" y="269" key="run.anything.popup" timestamp="1590428144585">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="460" y="269" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590428144585" />
+  </component>
+</project>

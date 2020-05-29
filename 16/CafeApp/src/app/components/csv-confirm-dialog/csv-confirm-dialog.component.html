@@ -1,0 +1,23 @@
+<app-product-list-template [productList]="dataList" [tableCsvClassName]="csvClassName"></app-product-list-template>
+<div class="footer">
+    <p class="note note_alert">
+    ※システム反映まで時間がかかります。<br />
+    ※内容をよくお確かめの上アップロードしてください。
+    </p>
+
+    <div class="footer">
+        <button 
+            mat-raised-button 
+            color="accent" 
+            (click)="closeModal()" 
+            [disabled]="uploading"
+            class="cancel_button">キャンセル
+        </button>
+        <button 
+            mat-raised-button 
+            color="primary" 
+            (click)="onCallUpload()" 
+            class="upload_button">アップロード
+        </button>
+    </div>
+</div>

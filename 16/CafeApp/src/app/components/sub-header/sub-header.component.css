@@ -1,0 +1,9 @@
+nav ul li {
+  display: inline;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=sub-header.component.css.map */

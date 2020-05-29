@@ -1,0 +1,27 @@
+.content{
+  text-align: left;
+  margin:10px
+}
+
+.open-close-status{
+  font-weight: bold;
+  padding: 5px;
+  color: #F3786C;
+}
+.open-close-radio-group{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.open-close-radio{
+  margin: 5px;
+  font-weight: bold;
+}
+.submit{
+  margin: 5px;
+  color: #fff;
+  background-color: #F3786C;
+  width: 130px;
+  border-radius: 10px;
+}

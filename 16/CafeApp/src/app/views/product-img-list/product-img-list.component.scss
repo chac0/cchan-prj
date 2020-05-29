@@ -1,0 +1,152 @@
+p.note{
+    // word-wrap: break-word;
+    white-space: wrap;
+    text-align: left;
+}
+div#component_main{
+    text-align: left;
+    padding: 10px;
+}
+
+input.u-full-width{
+    width: 40%; /*親要素いっぱい広げる*/
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/    
+}
+
+button.button-select{
+    padding: 5px 30px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius:10px;
+    
+}
+
+//リスト更新ボタン
+.img_list_updater{
+  text-align: right;
+}
+
+.button_refresh{
+  font-size:30px;
+}
+.button_refresh:hover{
+  cursor: pointer;
+  color: red;
+}
+
+
+//=========================
+// 確認ダイアログ
+//========================
+.footer{
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fdfdfb;
+}
+
+button.cancel_button{
+  padding: 10px;
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius:10px;
+}
+
+button.upload_button{
+  padding: 10px 30px;
+  margin: 10px;
+  border-radius:10px;
+}
+  
+.modal {
+    .modal-check {
+        display: none;
+    }
+    .modal-body {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(#000,.2);
+        z-index: 100000
+    }
+    .modal-window {
+        box-shadow: 2px 10px 10px rgba(#000,.2);
+        position: relative;
+        z-index: 100001;
+        animation: fadein .3s 1, zoomin .3s 1;
+    }
+
+    .modal-inner {
+        width: 80vw;
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 500px;
+        width: 700px;
+        background: #fff;
+        border-radius: 3px;
+        // box-shadow: 0px 2px 10px rgba(#000,.2);
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .modal-content {
+        padding: 20px;
+    }
+    .modal-check:checked + .modal-body {
+        animation: fadeout .2s 1 forwards, hide .1s .2s 1 forwards;
+        .modal-window {
+        animation: zoomout .2s 1 forwards;   
+        }
+    }
+}
+
+//animation
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeout {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes zoomin {
+  0% {transform:scale(.9);}
+  100% {transform:scale(1);}
+}
+@keyframes zoomout {
+  0% {transform:scale(1);}
+  100% {transform:scale(.9);}
+}
+@keyframes hide {
+  0% {visibility: visible;}
+  100% {visibility: hidden;}
+}
+
+
+
+progress[value] {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid rgb(116, 107, 107);
+  border-radius: 2px;
+  color: #63cf0c; /* IE */
+  height: 20px;
+}
+/* chrome */
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+}
+progress[value]::-webkit-progress-value {
+  background-color: #63cf0c;
+}
+/* firefox */
+progress[value]::-moz-progress-bar {
+  background-color: #63cf0c;
+}

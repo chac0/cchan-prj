@@ -1,0 +1,67 @@
+<div *ngIf="productList==null || productList.length == 0; then showContent else hideContent"></div>
+<ng-template #showContent>
+  <div *ngIf="loading" class="spinner_container">
+    <mat-spinner></mat-spinner>
+  </div>
+  <div *ngIf="!loading" class="spinner_container">
+    There are no data
+  </div>
+</ng-template>
+<ng-template #hideContent>
+  <table>
+    <thead [ngClass]="tableCsvClassName">
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Image</th>
+      <th>Update Stock</th>
+      <th>Order</th>
+    </tr>
+    </thead>
+    <tbody [ngClass]="tableCsvClassName">
+    <tr *ngFor="let item of productList; let i = index">
+      <td>
+                <span *ngIf="item.id.length == 0 || item.id == null">
+                    <!--<mat-icon color="primary" class="new_product">new_releases</mat-icon>-->
+                    <img src="/assets/icon_new.png" width=30 />
+                </span>
+        {{item.name}}
+      </td>
+      <td class="price">&yen;{{item.price | number}}</td>
+      <td><img withImageLoader [bindSrc]="item.imageUrl" class="image" width=100 /></td>
+      <td>
+        <app-product-list-update [i]="i"
+                                  [item]="item"></app-product-list-update>
+      </td>
+      <td>
+        <form class="input-container" [formGroup]="orderForm">
+          <div class="bold">
+            <input
+              matInput
+              formControlName="order_number"
+              id="order_number-{{i}}"
+              class="width-50"
+              [readonly]="isReadOnly"></div>
+        </form>
+          <div class="mt-8">
+            <mat-button-toggle-group
+              #group="matButtonToggleGroup"
+              [vertical]="true"
+              [disabled]="isOrderConfirmed"
+              class="width-100"
+            >
+              <mat-button-toggle
+                id="receiveAnOrder"
+                value="receiveAnOrder"
+                (click)="orderHandler(item.id, i)"
+                class="mat-button-toggle-checked"
+              >
+                Order Addition
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>

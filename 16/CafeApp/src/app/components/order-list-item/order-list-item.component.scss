@@ -1,0 +1,21 @@
+.product-list {
+    margin-top: 8px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.button-actions {
+    @extend .text-right;
+    margin: auto;
+}
+
+.decide-button {
+    padding-right: 20px;
+    color: white;
+}
+
+.text-right {
+    text-align: end;
+}

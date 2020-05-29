@@ -1,0 +1,19 @@
+.firebaserc
+functions/lib
+functions/firebase-debug.log*
+
+## Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# Typescript v1 declaration files
+typings/
+
+node_modules/
+
+# nyc
+.nyc_output/
+coverage/
+
+## firebase config [Local]
+.runtimeconfig.json

@@ -1,0 +1,24 @@
+<nav>
+    <ul>
+        <li>
+            <a routerLink="/order_list">Stock Update & Order</a>
+        </li>
+        <li>
+            <a routerLink="/product_list">Product List</a>
+        </li>
+        <li>
+            <a routerLink="/product_img_list">Product Image List</a>
+        </li>
+        <li>
+          <a routerLink="/open_close">Open/Close Setting</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" (click)="showSignoutConfirmDialog()">Logout</a>
+        </li>
+    </ul>
+</nav>
+<div *ngIf="router.url != '/open_close' && router.url != '/register'">
+    <h1 *ngIf="localStorageService && localStorageService.shopDocument">
+        {{ localStorageService.shopDocument.name }}
+    </h1>
+</div>

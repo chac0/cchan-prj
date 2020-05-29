@@ -1,0 +1,41 @@
+.input-container-element{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.input-symbol-icon{
+    margin-right: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.input-element-divider {
+    padding-top: 30px;
+    text-align: left;
+}
+.date-time-title{
+}
+.select-year-field{
+    width: 30px;
+}
+
+.my-mat-hint {
+    line-height: 1.2em;
+    transform: translateY(10px);
+    font-size: 75%;
+    color: grayscale($color: #8c8c8c);
+  }
+
+  .error-message{
+    line-height: 1.2em;
+    // transform: translateY(10px);
+    font-size: 75%;
+    color: red($color: #e24949)
+  }
+
+/////////////////////////////
+
+:host ::ng-deep .mat-form-field-label {
+    font-size: 0.8em;
+}
+// mat-form-field {
+//     width: 500px;
+// }

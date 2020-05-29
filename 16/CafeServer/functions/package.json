@@ -1,0 +1,47 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=src/credentials/000cafe-dev.json NODE_ENV=local npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "test": "nyc mocha --recursive --require ts-node/register \"test/**/*.ts\"",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "@sendgrid/mail": "^6.5.5",
+    "firebase-admin": "^5.13.1",
+    "firebase-functions": "^3.6.1",
+    "moment": "^2.24.0",
+    "reflect-metadata": "^0.1.13",
+    "stripe": "^7.14.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/hapi__joi": "^15.0.4",
+    "@types/mocha": "^5.2.7",
+    "@types/power-assert": "^1.5.3",
+    "@types/sinon": "^7.5.1",
+    "@types/uuid": "^3.4.6",
+    "firebase-functions-test": "^0.1.6",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
+    "power-assert": "^1.6.1",
+    "prettier": "^1.19.1",
+    "sinon": "^8.1.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.2"
+  },
+  "private": true
+}

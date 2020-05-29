@@ -1,0 +1,80 @@
+<script src="../order-list/order-list.component.ts"></script>
+<app-sub-header></app-sub-header>
+
+<h2>Enter product information</h2>
+<form class="input-container" [formGroup]="form">
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter name"
+        [(ngModel)]="name"
+        formControlName="name">
+      <mat-hint>Enter product name</mat-hint>
+      <mat-error *ngIf="form.get('name').hasError('required')">*Required</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label>Price</mat-label>
+      <input
+        matInput
+        placeholder="Price"
+        [(ngModel)]="price"
+        formControlName="price">
+      <mat-hint>USD</mat-hint>
+      <mat-error *ngIf="form.get('price').hasError('required')">*Required</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Stock"
+        [(ngModel)]="stock"
+        formControlName="stock">
+      <mat-error *ngIf="form.get('stock').hasError('required')">*Required</mat-error>
+    </mat-form-field>
+  </p>
+
+  <button mat-raised-button color="primary" (click)="onSubmit(this)">Enter</button>
+</form>
+
+<hr />
+
+<app-product-csv-export></app-product-csv-export>
+
+
+<div class="component_main">
+    <h2>Upload</h2>
+    <p class="note">
+        It will update the product list at once.<br />
+        * Image file names should be matching with the ones in product list csv file.
+
+    </p>
+    <app-notify-error-box [errorMsg]="errorMsg"></app-notify-error-box>
+    <input class="u-full-width" placeholder="*.csv" type="text" [(ngModel)]="selectedFileName" disabled>
+    <span>  </span>
+    <button mat-raised-button color="primary"  id="browse" class="button-select" (click)="csvInput.click()">Choose File</button>
+    <input  id="upfile"
+            name="upfile"
+            type="file"
+            accept="csv/*"
+            (click)="onClearSelectFile($event)"
+            (change)="onFileSelected($event)"
+            style="display: none" #csvInput />
+
+    <br />
+    <br />
+
+    <h2>Product List</h2>
+    <div *ngIf="!preview">
+        <p class="note">Showing the product list uploaded in the system.</p>
+        <br />
+        <app-product-list-template [productList]="serverDataList" [loading]="loading"></app-product-list-template>
+    </div>
+
+</div>
+
+

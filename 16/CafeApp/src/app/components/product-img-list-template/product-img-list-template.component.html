@@ -1,0 +1,20 @@
+
+<div *ngIf="imageInfoList==null || imageInfoList.length == 0; then showContent else hideContent"></div>
+
+<ng-template #showContent>
+    <div *ngIf="loading" class="spinner_container"><mat-spinner></mat-spinner></div>
+    <div *ngIf="!loading" class="spinner_container">There is no image file</div>
+</ng-template>
+
+<ng-template #hideContent>
+<table>
+    <tr>
+        <th>File Name</th>
+        <th>Image</th>
+    </tr>
+    <tr *ngFor="let item of imageInfoList">
+        <td>{{item.name}}</td>
+        <td><img withImageLoader [bindSrc]="item.img_url" class="image" width=100/></td>
+    </tr>
+</table>
+</ng-template>

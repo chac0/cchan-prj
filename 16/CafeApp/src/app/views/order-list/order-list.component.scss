@@ -1,0 +1,30 @@
+.order-list {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.scroll-viewer {
+    height: 70vh;
+    margin: auto;
+}
+
+.order-warning {
+    @extend .font-white;
+    margin-bottom: 12px;
+    background-color: #CE3632;
+    font-size: medium;
+}
+
+.order-info {
+    margin-bottom: 12px;
+    background-color: #f5d6d6ff;
+    font-size: medium;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-white {
+    color: white;
+}

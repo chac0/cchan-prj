@@ -1,0 +1,53 @@
+.image {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.button-actions {
+    @extend .text-right;
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.delivered-product {
+    @extend .bold;
+    color: #CE3632;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: end;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.font-white {
+    color: white;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.mat-button-toggle-checked {
+    background-color: #fd6d41;
+    color: white;
+}

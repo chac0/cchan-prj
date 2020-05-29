@@ -1,0 +1,13 @@
+  
+.no-effect {
+    color: red;
+}
+
+.mat-button ::ng-deep .mat-button-focus-overlay {
+    display: none;
+}
+
+.bold {
+    font: bolder;
+    color: red;
+}

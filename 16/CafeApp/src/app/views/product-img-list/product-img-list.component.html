@@ -1,0 +1,94 @@
+<app-sub-header></app-sub-header>
+
+<div id="component_main">
+
+    <h2>Product Image Entry</h2>
+
+    <p class="note">
+    It will upload all the image files in the file selected.<br />
+    * Upload image file that has the longer side of up to 1024px.<br />
+    * Use image file that has clear product image.<br />
+    * The file name has to match with the one in product image CSV file.
+    </p>
+
+    <app-notify-error-box [errorMsg]="errorMsg"></app-notify-error-box>
+    <input class="u-full-width" placeholder="Folder" type="text" [(ngModel)]="selectedFolder" disabled>
+    <button mat-raised-button color="primary"  class="button-select" (click)="photoInput.click()">Choose Folder</button>
+    <input  id="fileInput"
+            type="file"
+            style="display:none"
+            (click)="onSelectFolderClear($event)"
+            (change)="onSelectFolder($event)"
+            webkitdirectory directory mozdirectory msdirectory odirectory multiple #photoInput />
+
+
+    <br />
+    <br />
+    <!-- ▽▽▽▽▽アップロードするファイルを表示するエリア▽▽▽▽▽ -->
+    <div class="modal" *ngIf="showConfirmDialog">
+        <div class="modal-body">
+            <div class="modal-window">
+                <div class="modal-inner">
+                    <div class="modal-content">
+                        <table>
+                        <tr *ngFor="let item of upLoadDatas; index as i">
+                            <td>{{item.file.name}}</td>
+                            <td><img src={{item.localURL}} width="100" /></td>
+
+                            <!--- td begin -->
+                            <td>
+                                <div *ngIf="uploading">
+                                    <div *ngIf="item.task == null">
+                                        Waiting...
+                                    </div>
+                                    <div *ngIf="item.percentage | async as pct">
+                                        <progress [value]="pct" max="100"></progress>
+                                        {{ pct | number }}%
+                                    </div>
+                                </div>
+
+                            </td>
+                            <!--- td end -->
+                        </tr>
+                        </table>
+                    </div>
+                    <!-- End modal-content -->
+
+                </div>
+                <!-- End modal-inner -->
+
+                <!-- ↓↓↓ footer ↓↓↓-->
+                <div class="footer">
+                <button
+                    mat-raised-button
+                    color="accent"
+                    (click)="onCancel()"
+                    [disabled]="uploading"
+                    class="cancel_button">Cancel
+                </button>
+                <button
+                    mat-raised-button
+                    color="primary"
+                    [disabled]="uploading"
+                    (click)="onUpload()"
+                    class="upload_button">Upload
+                </button>
+                </div>
+                <!-- ↑↑↑ End footer ↑↑↑ -->
+            </div>
+            <!-- End modal-window -->
+        </div>
+        <!-- End modal-body -->
+    </div>
+    <!-- △△△△△アップロードするファイルを表示するエリア △△△△△-->
+
+
+    <h2>Product Iamge List</h2>
+    <p>Showing the product image list uploaded to the system.</p>
+    <br />
+    <div class="img_list_updater">
+        <mat-icon (click)="onRefreshList()" class="button_refresh">autorenew</mat-icon>
+    </div>
+    <app-product-img-list-template></app-product-img-list-template>
+
+</div>

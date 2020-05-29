@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-content>
+    <div fxLayout="column" fxLayoutGap="12px">
+      <div fxLayout="column" class="text-left" fxFlexFill>
+        <div>Order ID：{{ order.orderId }}</div>
+        <div>Order Number： {{ order.orderId | slice:-3 }}</div>
+      </div>
+      <div fxLayout="column" class="text-left" fxFlexFill>
+        <div>Buyer：{{ order.userName }}</div>
+        <div>Purchased Date/Time：{{ order.createdAt | date:'yyyy/MM/dd HH:mm:ss' }}</div>
+      </div>
+      <div fxLayout="column" class="text-left" fxFlexFill *ngIf="hasDeliveredProduct">
+        <div>
+          Address:
+        </div>
+        <div>
+          〒 {{ order.shippingAddress.postCode }}
+        </div>
+        <div>
+          {{ order.shippingAddress.address1 }} {{ order.shippingAddress.address2 }}
+        </div>
+        <div *ngIf="order.shippingAddress.address3">
+          {{ order.shippingAddress.address3 }}
+        </div>
+        <div>{{ order.shippingAddress.familyName }} {{ order.shippingAddress.firstName }}</div>
+        <div>TEL {{ order.shippingAddress.phone }}</div>
+      </div>
+    </div>
+    <div fxLayout="column" fxLayoutGap="8px" class="product-list">
+      <ng-container *ngFor="let info of orderInfo">
+        <app-order-info-list-item
+          [orderInfo]="info"
+          [isOrderConfirmed]="isOrderConfirmed"
+          (changeOrderStatus)="onOrderStatusChanged($event)" >
+        </app-order-info-list-item>
+      </ng-container>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="button-actions">
+    <button
+      mat-raised-button
+      class="decide-button"
+      color="primary"
+      [disabled]="isDefault || isOrderConfirmed || isPaying"
+      (click)="executeIfComfirmed()"
+    >
+      {{ isOrderConfirmed | either:'Confirm Order':'Confirmed' }}
+    </button>
+  </mat-card-actions>
+</mat-card>

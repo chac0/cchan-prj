@@ -1,0 +1,26 @@
+
+<app-sub-header></app-sub-header>
+<!-div class="bold">注文一覧</div>
+<mat-divider></mat-divider>
+<-ng-container *ngIf="unconfirmedOrderList$ | async as unconfirmedOrderList">
+  <mat-card class="order-warning" *ngIf="unconfirmedOrderList?.length > 0">
+    {{ unconfirmedOrderList?.length }} 件の注文が完了していません。
+  </mat-card>
+  <mat-card class="order-info" *ngIf="unconfirmedOrderList?.length === 0">
+    注文はありません。
+  </mat-card>
+</ng-container-->
+
+<h2>Product List</h2>
+<div *ngIf="!preview">
+  <p class="note">Update stock of each product. You can also order by clicking on "Order" button.</p>
+  <br />
+  <app-product-list [productList]="serverDataList" [loading]="loading"></app-product-list>
+  </div>
+
+  <ng-template #loading>
+  <div fxFlexFill fxLayout="row" fxLayoutAlign="center">
+    <mat-spinner mode="indeterminate">
+    </mat-spinner>
+  </div>
+</ng-template>

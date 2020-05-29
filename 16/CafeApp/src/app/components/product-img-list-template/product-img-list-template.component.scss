@@ -1,0 +1,27 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    color: rgb(85, 84, 84);
+  }
+  
+  table tr{
+    border-bottom: solid 2px #eee;
+  }
+  table th{
+    border-bottom: solid 4px rgb(219, 218, 218);
+  }
+
+  table th,table td{
+    text-align: left;
+    width: 25%;
+    padding: 15px 0;
+  }
+ 
+  .spinner_container{
+    padding: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }

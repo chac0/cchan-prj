@@ -1,0 +1,44 @@
+<div *ngIf="productList==null || productList.length == 0; then showContent else hideContent"></div>
+<ng-template #showContent>
+    <div *ngIf="loading" class="spinner_container">
+        <mat-spinner></mat-spinner>
+    </div>
+    <div *ngIf="!loading" class="spinner_container">
+        There is no record
+    </div>
+</ng-template>
+<ng-template #hideContent>
+    <table>
+        <thead [ngClass]="tableCsvClassName">
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Image</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody [ngClass]="tableCsvClassName">
+        <tr *ngFor="let item of productList">
+            <td>
+                <span *ngIf="item.id.length == 0 || item.id == null">
+                    <!--<mat-icon color="primary" class="new_product">new_releases</mat-icon>-->
+                    <img src="/assets/icon_new.png" width=30 />
+                </span>
+                {{item.name}}
+            </td>
+            <td class="price">&yen;{{item.price | number}}</td>
+            <td>{{item.stock}}</td>
+            <td><img withImageLoader [bindSrc]="item.imageUrl" class="image" width=100 /></td>
+          <td>
+            <mat-button-toggle
+              (click)="onDelete(item.id)"
+              class="mat-button-toggle-checked"
+            >
+              Delete
+            </mat-button-toggle>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</ng-template>

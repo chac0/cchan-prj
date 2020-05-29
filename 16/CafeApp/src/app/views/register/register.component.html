@@ -1,0 +1,257 @@
+<form class="input-container" [formGroup]="form">
+<div>
+<div>
+  <p class="input-container-element">
+    <mat-icon class="input-symbol-icon">account_balance</mat-icon>
+    <mat-form-field class="input-form-field">
+      <input 
+        matInput
+	      maxlength="100"
+        placeholder="ex:インクボックス" 
+        [(ngModel)]="brandName"
+        formControlName="brandName">
+      <mat-hint align="end">{{form.get('name').value.length}} / 100</mat-hint>
+      <mat-error *ngIf="form.get('brandName').invalid">必須入力です。</mat-error>
+    </mat-form-field>
+  </p>
+</div>
+  <p class="input-container-element">
+    <mat-icon class="input-symbol-icon">account_balance</mat-icon>
+    <mat-form-field class="input-form-field">
+      <input 
+        matInput
+	      maxlength="100"
+        placeholder="ex:インクボックス 000Cafe店" 
+        [(ngModel)]="name"
+        class="hoge"
+        formControlName="name">
+      <mat-hint align="end">{{form.get('name').value.length}} / 100</mat-hint>
+      <mat-error *ngIf="form.get('name').invalid">必須入力です。</mat-error>
+    </mat-form-field>
+  </p>
+</div>
+
+<div>
+<p class="input-container-element">
+    <mat-icon class="input-symbol-icon">phone</mat-icon>
+    <mat-form-field class="input-form-field">
+      <input 
+        matInput
+	      type="tel"
+        placeholder="電話番号" 
+        [(ngModel)]="phone"
+        formControlName="phone"
+        >
+
+      <mat-hint>ハイフン"-"は省略して入力</mat-hint>
+      <mat-error *ngIf="form.get('phone').hasError('required')">必須入力です。</mat-error>
+      <mat-error *ngIf="form.get('phone').hasError('pattern')">ハイフン"-"は省略して入力。</mat-error>
+
+    </mat-form-field>
+  </p>
+  </div>
+  <div>
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon">mail</mat-icon>
+      <mat-form-field class="input-form-field">
+	<input 
+          matInput
+	        type="email"
+          placeholder="ログインメールアドレス" 
+          [(ngModel)]="loginMail"
+          formControlName="loginMail">
+	<mat-error *ngIf="form.get('loginMail').hasError('required')">必須入力です。</mat-error>
+	<mat-error *ngIf="!form.get('loginMail').hasError('required') && form.get('loginMail').hasError('email')">アドレスを入力してください。</mat-error>
+      </mat-form-field>
+    </p>
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon">calendar_today</mat-icon>
+      <mat-form-field class="input-form-field">
+      <input 
+          matInput 
+          type="password"
+          maxlength="150"
+          placeholder="パスワード" 
+          [(ngModel)]="passWord"
+          formControlName="passWord">
+      <mat-hint>128字以内</mat-hint>
+      <mat-error *ngIf="form.get('passWord').hasError('required')">必須入力です。</mat-error>
+      <mat-error *ngIf="form.get('passWord').hasError('minlength')">6文字以上入力してください。</mat-error>
+      </mat-form-field>
+    </p>
+  </div>
+
+  <div>
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon">mail</mat-icon>
+      <mat-form-field class="input-form-field">
+        <input 
+          matInput 
+          type="email"
+          placeholder="通知用メールアドレス1" 
+          [(ngModel)]="mail1"
+          formControlName="mail1">
+      <mat-error *ngIf="form.get('mail1').hasError('email')">アドレスを入力してください。</mat-error>
+      </mat-form-field>
+    </p>
+    
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon"><!-- spacer --></mat-icon>
+      <mat-form-field class="input-form-field">
+        <input 
+          matInput 
+          type="email"
+          placeholder="通知用メールアドレス2" 
+          [(ngModel)]="mail2"
+          formControlName="mail2">
+  	<mat-error *ngIf="form.get('mail2').hasError('email')">アドレスを入力してください。</mat-error>
+      </mat-form-field>
+    </p>
+    
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon"><!-- spacer --></mat-icon>
+      <mat-form-field class="input-form-field">
+        <input 
+          matInput 
+    	  type="email"
+          placeholder="通知用メールアドレス3" 
+          [(ngModel)]="mail3"
+          formControlName="mail3">
+      <mat-error *ngIf="form.get('mail3').hasError('email')">アドレスを入力してください。</mat-error>
+      </mat-form-field>
+    </p>
+    
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon"><!-- spacer --></mat-icon>
+      <mat-form-field class="input-form-field">
+        <input 
+          matInput 
+    	  type="email"
+          placeholder="通知用メールアドレス4" 
+          [(ngModel)]="mail4"
+          formControlName="mail4">
+      <mat-error *ngIf="form.get('mail4').hasError('email')">アドレスを入力してください。</mat-error>
+      </mat-form-field>
+    </p>
+  </div>
+  
+  <div>    
+    <p class="input-element-divider">
+      <mat-label class="date-time-title">開店日</mat-label>
+      <mat-divider></mat-divider>
+    </p>
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon">calendar_today</mat-icon>
+      <mat-form-field class="input-form-field">
+  	<mat-select formControlName="openYear" [(value)]="openYear" placeholder="年" (selectionChange)="opendayList = createDayList(openYear,openMonth)">
+  	  <mat-option *ngFor="let year of yearList" [value]="year">
+  	    {{year}}
+  	  </mat-option>
+  	</mat-select>
+	<mat-error *ngIf="form.get('openYear').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-form-field">
+  	<mat-select formControlName="openMonth" [(value)]="openMonth" placeholder="月" (selectionChange)="opendayList = createDayList(openYear,openMonth)">
+  	  <mat-option *ngFor="let month of monthList" [value]="month">
+  	    {{month}}
+  	  </mat-option>
+  	</mat-select>
+	<mat-error *ngIf="this.form.get('openMonth').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-form-field">
+  	<mat-select formControlName="openDay" [(value)]="openDay" placeholder="日">
+  	  <mat-option *ngFor="let day of opendayList" [value]="day">
+  	    {{day}}
+  	  </mat-option>
+  	</mat-select>
+	<mat-error *ngIf="this.form.get('openDay').hasError('min')">必須項目です。</mat-error>
+	<mat-error *ngIf="this.form.get('openDay').hasError('max')">日付が不正です。</mat-error>
+      </mat-form-field>
+    </p>
+  </div>
+  
+  <div>
+    <p class="input-element-divider">
+      <mat-label class="date-time-title">閉店日</mat-label>
+      <mat-divider></mat-divider>
+    </p>
+    <p class="input-container-element">
+      <mat-icon class="input-symbol-icon">calendar_today</mat-icon>
+      <mat-form-field class="input-form-field">
+  	<mat-select formControlName="endYear" [(value)]="endYear" placeholder="年" (selectionChange)="enddayList = createDayList(endYear,endMonth);">
+  	  <mat-option *ngFor="let year of yearList" [value]="year">
+  	    {{year}}
+  	  </mat-option>
+  	</mat-select>
+	<mat-error *ngIf="this.form.get('endYear').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-form-field">
+  	<mat-select formControlName="endMonth" [(value)]="endMonth" placeholder="月" (selectionChange)="enddayList = createDayList(endYear,endMonth);">
+  	  <mat-option *ngFor="let month of monthList" [value]="month">
+  	    {{month}}
+  	  </mat-option>
+  	</mat-select>
+	<mat-error *ngIf="this.form.get('endMonth').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-form-field">
+  	<mat-select formControlName="endDay" [(value)]="endDay" placeholder="日">
+  	  <mat-option *ngFor="let day of enddayList" [value]="day">
+  	    {{day}}
+  	  </mat-option>
+  	</mat-select>
+	<mat-error *ngIf="this.form.get('endDay').hasError('min')">必須項目です。</mat-error>
+	<mat-error *ngIf="this.form.get('endDay').hasError('max')">日付が不正です。</mat-error>
+      </mat-form-field>
+    </p>
+  </div>
+  
+  <p class="input-element-divider">
+    <mat-label class="date-time-title">営業時間</mat-label>
+    <mat-divider></mat-divider>
+  </p>
+  
+  <span class="input-container-element">
+    <div>
+      <mat-icon class="input-symbol-icon">query_builder</mat-icon>
+      <mat-form-field class="input-form-field">
+	<mat-select formControlName="openHour" [(value)]="openHour" placeholder="時">
+	  <mat-option *ngFor="let hour of hourList" [value]="hour">
+	    {{hour}}
+	  </mat-option>
+	</mat-select>
+	<mat-error *ngIf="this.form.get('openHour').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-form-field">
+	<mat-select formControlName="openMin" [(value)]="openMin" placeholder="分">
+	  <mat-option *ngFor="let minute of minList" [value]="minute">
+	    {{minute}}
+	  </mat-option>
+	</mat-select>
+	<mat-error *ngIf="this.form.get('openMin').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      〜
+    </div>
+    <div>
+      <mat-form-field class="input-form-field">
+	<mat-select formControlName="endHour" [(value)]="endHour" placeholder="時">
+	  <mat-option *ngFor="let hour of hourList" [value]="hour">
+	    {{hour}}
+	  </mat-option>
+	</mat-select>
+	<mat-error *ngIf="this.form.get('endHour').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-form-field">
+	<mat-select formControlName="endMin" [(value)]="endMin" placeholder="分">
+	  <mat-option *ngFor="let minute of minList" [value]="minute">
+	    {{minute}}
+	  </mat-option>
+	</mat-select>
+	<mat-error *ngIf="this.form.get('endMin').hasError('min')">必須項目です。</mat-error>
+      </mat-form-field>
+    </div>
+  </span>
+  <div>{{this.form.openYear}}</div>
+  <button mat-raised-button color="primary" (click)="onSubmit(this)" [disabled]="!formAvailable">登録</button>
+</form>
+
+<hr />

@@ -1,0 +1,19 @@
+<h1 mat-dialog-title class="bold">{{data.title}}</h1>
+<div mat-dialog-content>
+  <div [innerHTML]='data.message'></div>
+</div>
+<ng-container *ngIf="data.button2Name; then twoButtonModal; else oneButtonModal">
+</ng-container>
+
+<ng-template #twoButtonModal>
+  <div mat-dialog-actions fxLayout="row-reverse wrap">
+    <button mat-button id="button1" class="no-effect" (click)="onButton1Click()">{{data.button1Name}}</button>
+    <button mat-button id="button2" class="no-effect" (click)="onButton2Click()">{{data.button2Name}}</button>
+  </div>
+</ng-template>
+
+<ng-template #oneButtonModal>
+  <div mat-dialog-actions fxLayout="row wrap" fxLayoutAlign="center">
+    <button mat-button id="button1" class="no-effect" (click)="onButton1Click()">{{data.button1Name}}</button>
+  </div>
+</ng-template>
