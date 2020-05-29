@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <meta charset="utf-8" />
+        <title> CST336: Web Development Trends: JavaScript Framework </title>
+        <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie%20Flower" rel="stylesheet">
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        <header>
+            <h1>The Latest Trends of Web Development</h1>
+        </header>
+        <nav>
+		    <ul>
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="responsive.html">Responsive Websites</a></li>
+		        <li><a href="html5css3.html">HTML5 CSS3</a></li>
+		        <li><a href="cssframework.html">CSS Framework</a></li>
+		        <li class="current"><a href="jsframework.html">JavaScript Framework</a></li>
+		    </ul>
+        </nav>
+        
+        <br /><br />
+
+		<main>
+	    <div id="centered">
+	        <div id="welcomeText">
+	            <h2>What is JavaScript Framework?</h2>
+	            <p>A JavaScript framework is an application framework written in JavaScript. It defines the entire application design and control flow and also includes JavaScript libralies.
+Some JavaScript frameworks follow the model–view–controller paradigm designed to segregate a web application into units to improve code quality and maintainability.</p>
+	            <br /><br />
+
+	            <h2>Examples of Latest JavaScript Frameworks</h2>
+	            <p>There are 3 major JavaScript framework widely used by web developper; Angular, React, Vue.js.</p>
+	            <br /><br />
+
+		        <figure>
+		            <img src="./img/4-1.jpg" width="500" alt="Example 1" /><br />
+		            <small>Image Source:<a href="https://angularjs.org/">Angular.JS</a></small>
+		        </figure>
+		        <p>AngularJS is a JavaScript framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.</p>
+
+		        <figure>
+		            <img src="./img/4-2.jpg" width="500" alt="Example 2" /><br />
+		            <small>Image Source:<a href="https://reactjs.org/">React JS</a></small>
+		        </figure>
+		        <p>React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+React can be used as a base in the development of single-page or mobile applications.</p>
+
+		        <figure>
+		            <img src="./img/4-3.jpg" width="500" alt="Example 3" /><br />
+		            <small>Image Source:<a href="https://jp.vuejs.org/index.html">Vue JS</a></small>
+		        </figure>
+		        <p>Vue is an open source JavaScript framework for building user interfaces in web applications. It is designed to be easy to introduce to projects that use other JavaScript libraries, but it also constructs a high-performance single page application.</p>
+
+	        </div>
+
+	        
+	    </div>
+        </main>
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+        
+            <hr>
+            2019&copy; <strong>Hisako Yada</strong> <br />
+            <img id="logo" src="./img/logo.gif" alt="logo"/>
+            
+        </footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/CafeApp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

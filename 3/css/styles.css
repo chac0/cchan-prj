@@ -1,0 +1,163 @@
+body {
+	padding: 20px;
+	text-align: center;
+    background-image: url('../img/ramen.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+h1 {
+	margin-bottom: 20px;
+	padding: 20px 0;
+	color: #da3c41;
+	font-size: 122%;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+input[type=text] {
+	padding: 5px 10px;
+	font-size: 86%;
+	border: none;
+	border-radius: 3px;
+	background: #ddf0ff;
+}
+input[name=btn_confirm],
+input[name=btn_submit],
+input[name=btn_back] {
+	margin-top: 10px;
+	padding: 5px 20px;
+	font-size: 100%;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 3px 0 #da3c4180;
+	background: #da3c41;
+}
+input[name=btn_back] {
+	margin-right: 20px;
+	box-shadow: 0 3px 0 #777;
+	background: #999;
+}
+.element_wrap {
+	margin-bottom: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+}
+label {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	width: 150px;
+	vertical-align: top;
+}
+.element_wrap p {
+	display: inline-block;
+	margin:  0;
+	text-align: left;
+}
+label[for=gender_male],
+label[for=gender_female],
+label[for=agreement] {
+	margin-right: 10px;
+	width: auto;
+	font-weight: normal;
+}
+textarea[name=contact] {
+	padding: 5px 10px;
+	width: 60%;
+	height: 100px;
+	font-size: 86%;
+	border: none;
+	border-radius: 3px;
+	background: #ddf0ff;
+}
+.error_list {
+	padding: 10px 30px;
+	color: #da3c41;
+	font-size: 86%;
+	text-align: left;
+	border: 1px solid #da3c41;
+	border-radius: 5px;
+}
+.box{
+    padding: 0.5em 1em;
+    margin: 2em 10em;
+    background: yellow;
+    border-radius: 10px;
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}
+#footer {
+    color: orange;
+    font-size: 12px;
+    clear: left;
+}
+
+#school-logo {
+    display: block;
+    margin: 0 auto;
+    width : 100px;
+}
+.cp_box *, .cp_box *:before, .cp_box *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cp_box {
+	width: auto;
+	margin: 2em auto;
+}
+.cp_box label {
+	font-weight: bold;
+	position: relative;
+	display: block;
+	width: 80%;
+	margin: auto;
+	padding: 0.3em 1em;
+	cursor: pointer;
+	transition: all 0.3s;
+	text-align: center;
+	color: #da3c41;
+	border: 2px solid #da3c41;
+	border-radius: 3px;
+}
+.cp_box label:hover {
+	transition: all 0.3s;
+	color: #ffffff;
+	background: #da3c41;
+}
+.cp_box label::after {
+	font-family: 'FontAwesome';
+	color: #da3c41;
+}
+.cp_box label:hover::after {
+	color: #ffffff;
+}
+.cp_box input:checked ~ label::after {
+	font-family: 'FontAwesome';
+	color: #da3c41;
+}
+.cp_box input:checked ~ label:hover::after {
+	color: #ffffff;
+}
+.cp_box input {
+	display: none;
+}
+.cp_box .cp_container {
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	height: 0;
+	margin-top: -1px;
+	transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: xx-small;
+}
+.cp_box input:checked ~ div {
+	transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+}
+.cp_box input:checked ~ div.cp_container {
+	height: 1350px;
+}

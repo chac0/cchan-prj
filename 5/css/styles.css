@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+}
+
+nav a.current-page {
+    color: pink;
+}
+
+nav a:hover {
+    border-bottom: 2px orange solid;
+    font-size 2em;
+    transition: .9s;
+}
+
+#center {
+    width:45%;
+    padding:1em;
+    margin:0 auto;
+}
+
+#content {
+    text-align: center;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+#centered {
+    display: block;
+    margin: 0 auto;
+    overflow-y: hidden;
+    clear: both;
+    text-align: center;
+}
+
+#me, #welcomeText{
+    display: inline-block;
+}
+
+#footer {
+    color: orange;
+    font-size: 12px;
+    clear: left;
+}
+
+#school-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    margin: auto, auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#header {
+    background-color: #ff00b7;
+}
+
+.table-row {
+    background-color: #ff00b7;
+    color: white;
+}
+
+ul {
+    text-align: left;
+}
+
+.hobby {
+    color: yellow;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}

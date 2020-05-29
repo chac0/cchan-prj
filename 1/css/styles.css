@@ -1,0 +1,132 @@
+body {
+    background-color: white;
+    color: gray;
+}
+
+header, footer {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 22px;
+}
+
+nav{
+    border-bottom: 1px solid #ccc;
+}
+nav ul{
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+}
+nav ul li{
+    display: table-cell;
+    min-width: 50px;
+    border-right: 1px solid #ccc;
+}
+nav ul li:first-child{
+    border-left: 1px solid #ccc;
+}
+nav ul li a{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #aaa;
+}
+nav ul li a:hover{
+    background-color:pink;
+    border-bottom: 5px solid pink;
+}
+nav ul li.current{
+    font-weight: bold;
+}
+nav ul li.current a{
+    border-bottom: 5px solid #ff00b7;
+    color: #ff00b7;
+}
+
+#center {
+    width:45%;
+    padding:1em;
+    margin:0 auto;
+}
+
+#content {
+    text-align: center;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+#centered {
+    display: block;
+    margin: 0 auto;
+    overflow-y: hidden;
+    clear: both;
+    text-align: center;
+}
+
+#me, #welcomeText{
+    display: inline-block;
+}
+
+#footer {
+    color: orange;
+    font-size: 12px;
+    clear: left;
+}
+
+#school-logo {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+}
+
+table {
+    margin: auto, auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#header {
+    background-color: #ff00b7;
+}
+
+.table-row {
+    background-color: #ff00b7;
+    color: white;
+}
+
+ul {
+    text-align: left;
+}
+
+.hobby {
+    color: yellow;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+	padding: 0.3em;
+	color: #ff00b7;
+	background: pink;
+	border-bottom: solid 3px #ff00b7;
+}

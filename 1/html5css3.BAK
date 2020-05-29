@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <meta charset="utf-8" />
+        <title> Cchan: Web Development Trends: HTML5 CSS3 </title>
+        <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie%20Flowerr" rel="stylesheet">
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        <header>
+            <h1>The Latest Trends of Web Development</h1>
+        </header>
+        <nav>
+		    <ul>
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="responsive.html">Responsive Websites</a></li>
+		        <li class="current"><a href="html5css3.html">HTML5 CSS3</a></li>
+		        <li><a href="cssframework.html">CSS Framework</a></li>
+		        <li><a href="jsframework.html">JavaScript Framework</a></li>
+		    </ul>
+        </nav>
+        
+        <br /><br />
+
+		<main>
+	    <div id="centered">
+	        <div id="welcomeText">
+	            <h2>Why to use HTML5 and CSS3?</h2>
+	            <p>After long history of improvement of these markup languages started begging of 1990, it finally came to the point HTML and CSS are used not only for usuability of information viewing, but also for control of web applications.</p>
+	            <p>HTML 5 is the latest version of the HTML language. HTML 5 came out with a lot of improvements over its predecessors, offering better and more innovative ways to meet the increasing demand of sophisticated cross-device and cross-browser websites. HTML 5 is useful in building interactive websites with high-quality graphics and animations.</p>
+	            <p>CSS 3 is the latest version of CSS with a lot of innovative features like multiple tone backgrounds, transition and transformation properties, text-shadow property, rounded corners, box shadows, transparency and much more. CSS 3 gives the web designers and developers, better formatting options for an attractive presentation of web pages.</p>
+	            <br /><br />
+
+	            <h2>Example of Web Sites With Use of HTML5 and CSS3</h2>
+	            <p>These are commersial web sites that take the most advantages of HTML5 and CSS3 effectiveness.</p>
+	            <br /><br />
+
+		        <figure>
+		            <img src="./img/2-1.png" width="500" alt="Example 1" /><br />
+		            <small>Image Source:<a href="https://www.google.com/sheets/about/">Google Spread Sheet</a></small>
+		        </figure>
+
+		        <figure>
+		            <img src="./img/2-2.png" width="500" alt="Example 2" /><br />
+		            <small>Image Source:<a href="https://www.bluhomes.com/">Blu Homes</a></small>
+		        </figure>
+
+		        <figure>
+		            <img src="./img/2-3.png" width="500" alt="Example 4" /><br />
+		            <small>Image Source:<a href="https://www.airbnb.com/">Air BnB</a></small>
+		        </figure>
+
+		        <figure>
+		            <img src="./img/2-4.png" width="500" alt="Example 5" /><br />
+		            <small>Image Source:<a href="https://www.thestlbrowns.com/">St. Louis Browns</a></small>
+		        </figure>
+
+	        </div>
+
+	        
+	    </div>
+        </main>
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+        
+            <hr>
+            2019&copy; <strong>Hisako Yada</strong> <br />
+            <img id="logo" src="./img/logo.gif" alt="logo"/>
+            
+        </footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>

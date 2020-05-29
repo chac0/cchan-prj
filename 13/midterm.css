@@ -1,0 +1,102 @@
+/* CSS Document */
+
+body {
+	background:#d0d5cd;
+	color: #444;
+	padding:0;
+	margin:0;
+	font-size: 12px;
+	font-family:Verdana, Geneva, sans-serif
+}
+
+.sectionContainer{
+	width:900px;
+	background:#e6e6e6;
+	margin:0 auto;
+}
+
+.gry{
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+	font-weight:bold;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#e6e6e6));
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+}
+
+.sectionTitle{
+	padding:4px;
+	padding-top:11px;
+	text-align:left;
+	font-size:16px;
+	margin:0 ;
+    -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-top-left-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+	}
+
+.sectionTitle:hover{
+  cursor: pointer;
+  background-position: 0 -15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sectionContent{ 
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-bottom-left-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	border-bottom-bottom-radius: 6px;
+	border-bottom-bottom-radius: 6px;
+	background: white;
+	padding:7px;
+	height:100px;
+}
+.sectionPadding{
+    padding:5px;
+}
+
+
+#wrapper {
+	width:900px;
+	margin:0 auto;
+	border:solid 0px black;
+}
+h1, h2 { text-align:center;
+}
+.expandLabel {
+	text-align:right;
+}
+.stepDescription{
+	float:left;
+	width:800px;
+	padding:5px;
+	border: solid 0px black;
+	line-height:1.3em;
+	font-size:1.3em;
+
+}
+
+.stepImage {
+	float:right;
+	text-align:center;
+}
+
+.sectionContentWrapper{
+	background-color:white;
+	width:850px;
+}

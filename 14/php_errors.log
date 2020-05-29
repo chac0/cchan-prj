@@ -1,0 +1,36 @@
+[09-Dec-2018 12:25:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/finalproject/api/getProductInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/finalproject/api/getProductInfo.php(10): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 10
+[09-Dec-2018 12:26:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/finalproject/api/getProductInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/finalproject/api/getProductInfo.php(10): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 10
+[09-Dec-2018 12:27:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/finalproject/api/getProductInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/finalproject/api/getProductInfo.php(10): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 10
+[09-Dec-2018 12:27:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/finalproject/api/getProductInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/finalproject/api/getProductInfo.php(10): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 10
+[09-Dec-2018 13:56:06 UTC] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 5
+[09-Dec-2018 13:57:17 UTC] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 5
+[09-Dec-2018 13:57:45 UTC] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 5
+[09-Dec-2018 13:57:54 UTC] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 5
+[09-Dec-2018 14:06:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '€€
+            inner join is_category on is_product.categoryId = is_category' at line 1' in /home/ubuntu/workspace/finalproject/api/getProductInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/finalproject/api/getProductInfo.php(10): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 10
+[09-Dec-2018 14:07:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '€€
+            inner join is_category on is_product.categoryId = is_category' at line 1' in /home/ubuntu/workspace/finalproject/api/getProductInfo.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/finalproject/api/getProductInfo.php(11): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalproject/api/getProductInfo.php on line 11
