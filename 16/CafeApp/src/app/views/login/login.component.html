@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<h2>ログイン</h2>
+<h2>Login</h2>
 
 <div *ngIf="!(authService.userData | async)">
   <form [formGroup]="form" (submit)="submit(form)">
@@ -12,8 +12,8 @@
   <div>
     <mat-icon>email</mat-icon>
     <mat-form-field>
-      <input matInput placeholder="Emailアドレス" type="text" [(ngModel)]="email" formControlName="fbemail">
-      <mat-error *ngIf="fbemail.errors && fbemail.errors.required">Emailアドレスは必須項目です</mat-error>
+      <input matInput placeholder="Email Address" type="text" [(ngModel)]="email" formControlName="fbemail">
+      <mat-error *ngIf="fbemail.errors && fbemail.errors.required">Email Address is required</mat-error>
     </mat-form-field>
     <br />
   </div>
@@ -22,18 +22,18 @@
   <div>
     <mat-icon>vpn_key</mat-icon>
     <mat-form-field>
-      <input matInput placeholder="パスワード" type="password" [(ngModel)]="password" id="pwd" formControlName="fbpwd">
-      <mat-error *ngIf="fbpwd.errors && fbpwd.errors.required">パスワードは必須項目です</mat-error>
-      <mat-error *ngIf="fbpwd.errors && fbpwd.errors.maxlength">パスワードは128文字以内で入力して下さい</mat-error>
+      <input matInput placeholder="Password" type="password" [(ngModel)]="password" id="pwd" formControlName="fbpwd">
+      <mat-error *ngIf="fbpwd.errors && fbpwd.errors.required">Password is required</mat-error>
+      <mat-error *ngIf="fbpwd.errors && fbpwd.errors.maxlength">Enter password within 128 characters</mat-error>
     </mat-form-field>
     <br />
   </div>
   <br />
 
-  <button mat-raised-button color="primary" (click)="signIn()">ログイン</button>
+  <button mat-raised-button color="primary" (click)="signIn()">LOGIN</button>
   <br />
   <br />
-  <button mat-raised-button color="primary" (click)="signUp()">登録</button>
+  <button mat-raised-button color="primary" (click)="signUp()">SIGN-UP</button>
 
   </form>
 </div>

@@ -60,7 +60,6 @@ export class ProductListComponent implements OnInit, OnChanges {
  }
 
   update(number_stock: number, id: string, i: string) {
-    console.log('<<>>>>>>',number_stock);
     //新規追加処理
     this.productInfoDocRepository.findById(id).subscribe(data => {
       data.stock = number_stock;
@@ -73,7 +72,6 @@ export class ProductListComponent implements OnInit, OnChanges {
   }
 
     orderHandler(id: string, i: string) {
-      console.log('<3<3<3<3<3',id,i);
       this.id = id;
       const element2: HTMLInputElement =<HTMLInputElement>document.getElementById('order_number-'+i);
       this.quantity = element2.value;
@@ -119,7 +117,7 @@ export class ProductListComponent implements OnInit, OnChanges {
         title: 'Order Confirmation',
         message: `
           <div>
-            Will you proceed the order with quantity of ${this.quantity}?
+            Will you proceed the order with quantity of ${this.quantity} count(s)?
           </div>
         `,
         button1Name: 'Yes',

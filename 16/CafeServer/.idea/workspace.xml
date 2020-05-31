@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/../../Setup/FireStore_Importer/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Setup/FireStore_Importer/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/logout-confirm-dialog/logout-confirm-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/logout-confirm-dialog/logout-confirm-dialog.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/order-info-list-item/order-info-list-item.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/order-list-item/order-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/order-list-item/order-list-item.component.html" afterDir="false" />
@@ -19,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/components/sub-header/sub-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/components/sub-header/sub-header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/models/product.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/models/shipping-address.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/models/shipping-address.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/open-close/open-close.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CafeApp/src/app/views/order-list/order-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CafeApp/src/app/views/order-list/order-list.component.html" afterDir="false" />
@@ -53,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CafeApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -166,6 +168,8 @@
       <workItem from="1590688173936" duration="333000" />
       <workItem from="1590688892778" duration="615000" />
       <workItem from="1590692753865" duration="629000" />
+      <workItem from="1590847293659" duration="46000" />
+      <workItem from="1590861290945" duration="232000" />
     </task>
     <servers />
   </component>
