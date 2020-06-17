@@ -21,7 +21,7 @@ Chatbot/チャットボット
 URL: http://tehe.us-west-2.elasticbeanstalk.com/<br />
 Git： https://github.com/h-yada/chatbot.git<br />
 <br />
-[JavaScript]<br />
+[JavaScript]
 2. h2:<b>Rock Paper Scessors Game/じゃんけんシステム</b><br />
 https://cchan-prj.herokuapp.com/2<br />
 https://github.com/chac0/cchan-prj/tree/master/2
