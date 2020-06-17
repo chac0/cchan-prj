@@ -8,13 +8,13 @@ http://www.chaco.lc
 
 Git紹介：勉強兼ねてのサイドプロジェクトとしてGitに挙げているものを紹介します。
 
-[Angular/TypeScript/Firebase/FireAuth]
-a1:Food Business Inventory System/飲食業在庫管理システム
-https://github.com/chac0/cchan-prj/tree/master/16
-https://ctc-cafe.web.app/
-ID:tofu@tofu.com
-PW:testtest
-
+[Angular/TypeScript/Firebase/FireAuth]<br />
+a1:Food Business Inventory System/飲食業在庫管理システム<br />
+https://github.com/chac0/cchan-prj/tree/master/16<br />
+https://ctc-cafe.web.app/<br />
+ID:tofu@tofu.com<br />
+PW:testtest<br />
+<br />
 [Node.js]
 Chatbot/チャットボット
 * Elastic Beanstalk＋Node.js＋Express＋SASS＋socket.io<br />
