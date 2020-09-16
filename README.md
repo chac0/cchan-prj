@@ -20,6 +20,7 @@ PW:testtest<br />
 Chatbot/チャットボット<br />
 * Elastic Beanstalk＋Node.js＋Express＋SASS＋socket.io<br />
 URL: http://chatbot-env.eba-4w66kizm.us-east-2.elasticbeanstalk.com/<br />
+* Open in multiple browers to see messages are shared.<br />
 Git： https://github.com/h-yada/chatbot.git<br />
 <br />
 [JavaScript]<br />
