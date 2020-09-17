@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/index.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">    </head>
+    <body>
+        <h1>Hello,<input type="text" id="user-name-input" placeholder="put your name">! Send Messages!</h1>
+        <input type="text" name="msg-input" id="msg-input"/>
+        <button id="msg-btn" onclick="sendMessage()"> Send </button>
+        <div id="msg-whole"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/def_events.js"></script>
+
+    </body>
+</html>
