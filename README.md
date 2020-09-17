@@ -8,20 +8,23 @@ http://www.chaco.lc
 
 Git紹介：勉強兼ねてのサイドプロジェクトとしてGitに挙げているものを紹介します。
 
-[Angular/TypeScript/Firebase/FireAuth]
-a1:Food Business Inventory System/飲食業在庫管理システム
-https://github.com/chac0/cchan-prj/tree/master/16
-https://ctc-cafe.web.app/
-ID:tofu@tofu.com
-PW:testtest
-
-[Node.js]
-Chatbot/チャットボット
+[Angular/TypeScript/Firebase/FireAuth]<br />
+a1:Food Business Inventory System/飲食業在庫管理システム<br />
+https://github.com/chac0/cchan-prj/tree/master/16<br />
+https://ctc-cafe.web.app/<br />
+ID:tofu@tofu.com<br />
+PW:testtest<br />
+<br />
+[Node.js]<br />
+<br />
+Chatbot/チャットボット<br />
 * Elastic Beanstalk＋Node.js＋Express＋SASS＋socket.io<br />
-URL: http://tehe.us-west-2.elasticbeanstalk.com/<br />
-Git： https://github.com/h-yada/chatbot.git
-
-[JavaScript]
+URL: http://chatbot-env.eba-4w66kizm.us-east-2.elasticbeanstalk.com/<br />
+!!! Open in multiple browers to see messages are shared.<br />
+Git： https://github.com/h-yada/chatbot.git<br />
+<br />
+[JavaScript]<br />
+<br />
 2. h2:<b>Rock Paper Scessors Game/じゃんけんシステム</b><br />
 https://cchan-prj.herokuapp.com/2<br />
 https://github.com/chac0/cchan-prj/tree/master/2
